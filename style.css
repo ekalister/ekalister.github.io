@@ -313,7 +313,7 @@ header .navbar ul li a:hover {
 }
 
 .contact .row form .box::placeholder {
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .contact .row form .message {

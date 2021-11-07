@@ -110,19 +110,22 @@
         </div>
 
         <form action="">
-          <input type="text" placeholder="Ime" class="box" />
-          <input type="email" placeholder="E-mail" class="box" />
-          <input type="text" placeholder="Naslov" class="box" />
+          <input
+            type="text"
+            id="from_name"
+            placeholder="Ime pošiljatelja"
+            class="box"
+          />
           <textarea
             name=""
-            id=""
+            id="message"
             cols="30"
             rows="10"
             class="box message"
             placeholder="Poruka"
           ></textarea>
 
-          <button type="submit" class="btn">
+          <button type="submit" class="btn send">
             Pošalji
             <i class="fas fa-paper-plane"></i>
           </button>
@@ -132,6 +135,17 @@
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Email Js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_DApKPZJxb7LoXPDHVX3bw");
+      })();
+    </script>
 
     <script src="script.js"></script>
   </body>
